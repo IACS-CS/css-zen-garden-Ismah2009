@@ -17,33 +17,144 @@
 /* Typography */
 
 /* Get your own import URL from Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap');
+
 
 .page-wrapper {
   /* Main font */
-  font-family: Poppins, sans-serif;
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 23px;
+  background: transparent;
 }
-h1,
-h2,
+
 h3,
 h4,
 h5,
 h6 {
   /* Header font */
-  font-family: "Dancing Script", cursive;
+  font-family: 'Honk', system-ui;
+  font-size: 40px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: "Coral Pixels", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  background-color: #efd9de;
 }
 
 /* Background */
 #css-zen-garden {
-  background: linear-gradient(45deg, #f3f3f3 0%, #c8c8c8 100%);
+  background-image: url("Firefly_Gemini\ Flash_generate\ me\ a\ pixel\ night\ star\ sky\ i\ can\ use\ for\ a\ bacground\ make\ the\ clor\ scheme\ hav\ 783560.png"); /* pixel sky*/
+  background-size: cover;     /* make it fill the page */
+  background-position: left; /* center the image */
+  background-repeat: no-repeat; /* no repeating */
+  background: linear-gradient(45deg, #54b847; 0%, #fec325 100%);
 }
 /* Page wrapper */
 .page-wrapper {
-  box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid #ccc;
-  padding: 1em;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  max-width: 960px;
-  margin: 0 auto;
+
 }
+
+aside {
+ background: #ff40af;
+ position:fixed;
+ top: 0;
+ left: 0;
+ width: 230px;
+ height: 100dvh;
+ overflow: hidden;
+ overflow-y: auto;
+ color:#000000;
+}
+
+aside a{
+  color:#000000;
+}
+
+aside h3{
+  text-align: center;
+}
+
+body{
+  color: #fffa75;
+}
+
+body a{
+  color: #fffa75;
+}
+
+.page-wrapper{
+  margin-left: 230px;
+}
+
+
+main p,
+main li,
+.intro p {
+  background-color: #000000;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+main p,
+main li,
+.intro p {
+  opacity: 0;
+  transform: translateX(-70px);
+  transition: 0.6s;
+}
+
+header {
+  width: 640px;
+  margin:auto;
+  background-color: #efd9de;
+  border-radius: 8px;
+  box-shadow: 8px 8px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+CODE WAS CREATED BY CHATGPT
+/* when you hover over headers or their sections, text slides in */
+h3:hover ~ p,
+h3:hover ~ ul li,
+.summary:hover p,
+.preamble:hover p,
+.explanation:hover p,
+.participation:hover p,
+.requirements:hover p,
+.participation:hover li,
+.requirements:hover li {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/* list items come in one by one */
+.participation li:nth-child(1),
+.requirements li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.participation li:nth-child(2),
+.requirements li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.participation li:nth-child(3),
+.requirements li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+
