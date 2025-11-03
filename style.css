@@ -74,6 +74,7 @@ aside {
  overflow: hidden;
  overflow-y: auto;
  color:#000000;
+ font-size: 20px;
 }
 
 aside a{
@@ -100,7 +101,7 @@ body a{
 main p,
 main li,
 .intro p {
-  background-color: #000000;
+  background-color: #343785;
   margin: 0;
   padding: 10px;
   text-align: center;
