@@ -66,11 +66,11 @@ h2{
   background-size: cover;   
   background-position: left; 
   background-repeat: no-repeat; 
-  background: linear-gradient(45deg, #54b847; 0%, #fec325 100%);
+  background: linear-gradient(45deg, #54b847 0%, #fec325, 100%);
 }
 /* Page wrapper */
 .page-wrapper {
-
+background: none;
 }
 
 aside {
@@ -93,6 +93,13 @@ aside a{
 aside h3{
   text-align: center;
   background-color: #613485;
+  color: #fffa75;
+  font-size: 28px;
+  text-transform: uppercase;
+  padding: 23px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
 }
 
 body{
@@ -137,7 +144,7 @@ header {
   align-items: center;
   flex-direction: column;
 }
-CODE WAS CREATED BY CHATGPT
+
 /* when you hover over headers or their sections, text slides in */
 h3:hover ~ p,
 h3:hover ~ ul li,
@@ -188,4 +195,67 @@ h3:hover ~ ul li,
   transform: rotate(0deg);       /* faces up — change to 180deg to flip */
 }
 
+/MADE BY CHAT GPT
+aside nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Remove default list formatting and center contents */
+aside nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Make every list item a button container */
+aside nav ul li {
+  background-color: #fffa75;          /* yellow button color */
+  border-radius: 12px;
+  margin: 10px 0;                     /* space between buttons */
+  width: 80%;                         /* consistent centered width */
+  transition: all 0.25s ease;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  text-align: center;
+  font-size: 0;                       /* hide unwanted text like "by" */
+}
+
+/* Make every link fill its yellow button */
+aside nav ul li a {
+  display: block;
+  width: 100%;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  font-size: 1rem;                    /* restore link text only */
+}
+
+/* Hide second link + the literal "by" between them */
+aside nav ul li a + a,
+aside nav ul li a + a::before {
+  display: none !important;
+}
+
+/* Hover + click effects */
+aside nav ul li:hover {
+  background-color: #fcec5f;          /* lighter yellow on hover */
+  transform: scale(1.05);
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.35);
+}
+aside nav ul li:active {
+  transform: scale(0.97);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
 
