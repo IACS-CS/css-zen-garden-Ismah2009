@@ -22,6 +22,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap');
 
 
+
 .page-wrapper {
   /* Main font */
   font-family: "Jersey 10", sans-serif;
@@ -41,8 +42,7 @@ h6 {
   text-align: center;
 }
 
-h1,
-h2 {
+h1{
   margin: 0;
   font-family: "Coral Pixels", serif;
   font-weight: 400;
@@ -51,12 +51,21 @@ h2 {
   background-color: #efd9de;
 }
 
+h2{
+  margin: 0;
+  font-family: "Coral Pixels", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  background-color: #efd9de;
+}
+
 /* Background */
 #css-zen-garden {
   background-image: url("Firefly_Gemini\ Flash_generate\ me\ a\ pixel\ night\ star\ sky\ i\ can\ use\ for\ a\ bacground\ make\ the\ clor\ scheme\ hav\ 783560.png"); /* pixel sky*/
-  background-size: cover;     /* make it fill the page */
-  background-position: left; /* center the image */
-  background-repeat: no-repeat; /* no repeating */
+  background-size: cover;   
+  background-position: left; 
+  background-repeat: no-repeat; 
   background: linear-gradient(45deg, #54b847; 0%, #fec325 100%);
 }
 /* Page wrapper */
@@ -157,6 +166,26 @@ h3:hover ~ ul li,
 .participation li:nth-child(3),
 .requirements li:nth-child(3) {
   transition-delay: 0.3s;
+}
+
+/* Scrollbar container */
+::-webkit-scrollbar {
+  width: 30px; /* gives room for the rocket */
+}
+
+/* Track (the space behind the rocket) */
+::-webkit-scrollbar-track {
+  background:#613485; /* dark “space” color */
+  border-radius: 20px;
+}
+
+/* The rocket thumb itself */
+::-webkit-scrollbar-thumb {
+  background: url('download.png') center center no-repeat;
+  background-size: 150%;          /* keeps rocket proportional */
+  border-radius: 20px;           /* rounded edges */
+  background-color: transparent; /* make sure no color hides it */
+  transform: rotate(0deg);       /* faces up — change to 180deg to flip */
 }
 
 
