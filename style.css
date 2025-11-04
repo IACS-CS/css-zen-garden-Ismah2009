@@ -144,7 +144,8 @@ header {
   align-items: center;
   flex-direction: column;
 }
-
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt:
+"Can you give me CSS code so that for each of the body texts under each header (not the menu); when I hover over the header or the body text section, the body text slides in from the left with a smooth transition effect? Also, for list items under headers, can you make them slide in one by one with a slight delay between each item?" */
 /* when you hover over headers or their sections, text slides in */
 h3:hover ~ p,
 h3:hover ~ ul li,
@@ -174,7 +175,8 @@ h3:hover ~ ul li,
 .requirements li:nth-child(3) {
   transition-delay: 0.3s;
 }
-
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt:
+"Can you give me CSS code to create a custom scrollbar that looks like a rocket ship? The scrollbar track should resemble outer space with a dark background, and the scrollbar thumb should be an image of a rocket ship that points upwards as you scroll down the page."
 /* Scrollbar container */
 ::-webkit-scrollbar {
   width: 30px; /* gives room for the rocket */
@@ -195,7 +197,9 @@ h3:hover ~ ul li,
   transform: rotate(0deg);       /* faces up — change to 180deg to flip */
 }
 
-/MADE BY CHAT GPT
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt:
+"Can you give me CSS code to style the navigation menu in the aside section so that each link appears as a yellow button with rounded corners? The buttons should have a slight shadow effect, and when hovered over, they should change to a darker yellow and slightly enlarge. Additionally, hide any unwanted text like 'by' that may appear between the links."
+/* Style the navigation menu in the aside section */
 aside nav {
   display: flex;
   flex-direction: column;
