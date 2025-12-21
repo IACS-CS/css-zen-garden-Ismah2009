@@ -115,10 +115,12 @@ main p,
 main li,
 .intro p {
   background-color: #343785;
-  margin: 0;
+  margin: 0 auto 1rem;
   padding: 10px;
-  text-align: center;
+  max-width: 650px;
+  text-align: left;
   border-radius: 5px;
+  line-height: 1.6;
 }
 
 main p,
