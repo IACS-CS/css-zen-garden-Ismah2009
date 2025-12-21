@@ -8,15 +8,10 @@
 * - I used ChatGPT to help me generate some of the CSS code. All labled below
 */
 
-
-
-
 /* Get your own import URL from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Honk&family=Jersey+10&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Honk&family=Jersey+10&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap");
 
 .page-wrapper {
   /* Main font */
@@ -32,12 +27,12 @@ h4,
 h5,
 h6 {
   /* Header font */
-  font-family: 'Honk', system-ui;
+  font-family: "Honk", system-ui;
   font-size: 40px;
   text-align: center;
 }
 
-h1{
+h1 {
   margin: 0;
   font-family: "Coral Pixels", serif;
   font-weight: 400;
@@ -46,7 +41,7 @@ h1{
   background-color: #efd9de;
 }
 
-h2{
+h2 {
   margin: 0;
   font-family: "Coral Pixels", serif;
   font-weight: 400;
@@ -58,35 +53,35 @@ h2{
 /* Background */
 #css-zen-garden {
   background-image: url("Firefly_Gemini\ Flash_generate\ me\ a\ pixel\ night\ star\ sky\ i\ can\ use\ for\ a\ bacground\ make\ the\ clor\ scheme\ hav\ 783560.png"); /* pixel sky*/
-  background-size: cover;   
-  background-position: left; 
-  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
   background: linear-gradient(45deg, #54b847 0%, #fec325, 100%);
 }
 /* Page wrapper */
 .page-wrapper {
-background: none;
+  background: none;
 }
 
 aside {
- background: #ff40af;
- position:fixed;
- top: 0;
- left: 0;
- width: 230px;
- height: 100dvh;
- overflow: hidden;
- overflow-y: auto;
- color:#000000;
- font-size: 20px;
+  background: #ff40af;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 230px;
+  height: 100dvh;
+  overflow: hidden;
+  overflow-y: auto;
+  color: #000000;
+  font-size: 20px;
 }
 
-aside a{
-  color:#000000;
+aside a {
+  color: #000000;
   letter-spacing: 1px;
 }
 
-aside h3{
+aside h3 {
   text-align: center;
   background-color: #613485;
   color: #fffa75;
@@ -98,18 +93,17 @@ aside h3{
   width: 80%;
 }
 
-body{
+body {
   color: #fffa75;
 }
 
-body a{
+body a {
   color: #fffa75;
 }
 
-.page-wrapper{
+.page-wrapper {
   margin-left: 230px;
 }
-
 
 main p,
 main li,
@@ -133,7 +127,7 @@ main li,
 
 header {
   width: 640px;
-  margin:auto;
+  margin: auto;
   background-color: #efd9de;
   border-radius: 8px;
   box-shadow: 8px 8px 8px;
@@ -182,17 +176,17 @@ h3:hover ~ ul li,
 
 /* Track (the space behind the rocket) */
 ::-webkit-scrollbar-track {
-  background:#613485; /* dark “space” color */
+  background: #613485; /* dark “space” color */
   border-radius: 20px;
 }
 
 /* The rocket thumb itself */
 ::-webkit-scrollbar-thumb {
-  background: url('download.png') center center no-repeat;
-  background-size: 150%;          /* keeps rocket proportional */
-  border-radius: 20px;           /* rounded edges */
+  background: url("download.png") center center no-repeat;
+  background-size: 150%; /* keeps rocket proportional */
+  border-radius: 20px; /* rounded edges */
   background-color: transparent; /* make sure no color hides it */
-  transform: rotate(0deg);       /* faces up — change to 180deg to flip */
+  transform: rotate(0deg); /* faces up — change to 180deg to flip */
 }
 
 /* AI-generated code: Created with the assistance of ChatGPT using the prompt:
@@ -218,15 +212,15 @@ aside nav ul {
 
 /* Make every list item a button container */
 aside nav ul li {
-  background-color: #fffa75;          /* yellow button color */
+  background-color: #fffa75; /* yellow button color */
   border-radius: 12px;
-  margin: 10px 0;                     /* space between buttons */
-  width: 80%;                         /* consistent centered width */
+  margin: 10px 0; /* space between buttons */
+  width: 80%; /* consistent centered width */
   transition: all 0.25s ease;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   text-align: center;
-  font-size: 0;                       /* hide unwanted text like "by" */
+  font-size: 0; /* hide unwanted text like "by" */
 }
 
 /* Make every link fill its yellow button */
@@ -241,7 +235,7 @@ aside nav ul li a {
   box-sizing: border-box;
   transition: all 0.25s ease;
   cursor: pointer;
-  font-size: 1rem;                    /* restore link text only */
+  font-size: 1rem; /* restore link text only */
 }
 
 /* Hide second link + the literal "by" between them */
@@ -252,7 +246,7 @@ aside nav ul li a + a::before {
 
 /* Hover + click effects */
 aside nav ul li:hover {
-  background-color: #fcec5f;          /* lighter yellow on hover */
+  background-color: #fcec5f; /* lighter yellow on hover */
   transform: scale(1.05);
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.35);
 }
@@ -261,3 +255,34 @@ aside nav ul li:active {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Consolidated on-screen AI citation placed at bottom of the sidebar menu.
+   Make space inside the sidebar and render the citation there so it does not
+   overlap main content. Credits: assistance by ChatGPT; badge created with GitHub Copilot. */
+/* Place consolidated citation on the right side of the page and make it
+   part of the document flow so it moves with scrolling. */
+.page-wrapper {
+  position: relative;
+}
+
+.page-wrapper::after {
+  content: "AI assistance: ChatGPT — animation/transition helper (badge created with GitHub Copilot)\A AI assistance: ChatGPT — nav/menu styling (badge created with GitHub Copilot)\A AI assistance: ChatGPT — custom scrollbar (badge created with GitHub Copilot)\A AI assistance: ChatGPT — paragraph readability / max-width (badge created with GitHub Copilot)";
+  position: absolute;
+  right: 12px;
+  bottom: 1.5in;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  z-index: 9999;
+  pointer-events: none;
+  white-space: pre-wrap;
+  text-align: left;
+  max-width: 220px;
+}
+
+@media (max-width: 600px) {
+  .page-wrapper::after {
+    display: none;
+  }
+}
